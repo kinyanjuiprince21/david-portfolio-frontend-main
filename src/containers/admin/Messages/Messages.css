@@ -1,0 +1,113 @@
+.messages {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 16px;
+  padding: 1rem 1.5rem;
+  background-color: #eaeaea;
+}
+.messages .messages__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.messages .messages__container .message__item {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 1rem;
+  display: flex;
+  gap: 8px;
+  box-shadow: var(--mainBoxShadow);
+}
+.messages .messages__container .message__item .item__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  color: #fff;
+}
+.messages .messages__container .message__item .item__content {
+  max-width: 260px;
+}
+.messages .messages__container .message__item:hover {
+  cursor: pointer;
+}
+.messages .chat__container {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: var(--mainBoxShadow);
+}
+.messages .chat__container .chat__header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.messages .chat__container .chat__header button {
+  padding: 0.3rem;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.messages .chat__container .chat__header button:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.messages .chat__container .chat__body {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+  overflow-y: auto;
+}
+.messages .chat__container .chat__body .chat__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+.messages .chat__container .chat__body .chat__item .item__message {
+  padding: 0.5rem 1rem;
+  background-color: #ccc;
+  width: 100%;
+}
+.messages .chat__container .chat__body .chat__item .item__time {
+  font-size: 12px;
+}
+.messages .chat__container .chat__actions form {
+  display: flex;
+  position: relative;
+}
+.messages .chat__container .chat__actions form textarea {
+  width: 100%;
+  min-height: 20px;
+  background-color: #faf9f9;
+  outline: none;
+  font-weight: 400;
+}
+.messages .chat__container .chat__actions form svg {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+}
+.messages .chat__container .chat__actions form svg:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  padding: 0.3rem;
+  border-radius: 50%;
+}/*# sourceMappingURL=Messages.css.map */

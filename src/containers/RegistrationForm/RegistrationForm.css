@@ -1,0 +1,61 @@
+.registration__container {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+  flex-direction: row;
+  border-radius: 8px;
+  width: 60%;
+  height: 90vh;
+  overflow-y: auto;
+  transition: all 0.3s ease-in;
+}
+.registration__container .registration__title {
+  flex: 0.5;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #374249;
+}
+.registration__container .registration__title div {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--mainColor1);
+  color: #fff;
+}
+.registration__container .registration__title div img {
+  width: 100px;
+}
+.registration__container .registration__fields {
+  padding: 2rem 1rem;
+  flex: 0.5;
+  overflow-y: scroll;
+}
+.registration__container .registration__fields ::-webkit-scrollbar-track {
+  width: 10px;
+}
+.registration__container .registration__fields form {
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.registration__container .registration__fields form button {
+  width: 70%;
+  padding: 0.5rem 0;
+  outline: none;
+  color: #fff;
+  background-color: var(--primaryColor);
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 3px;
+}
+.registration__container .registration__fields form button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.registration__container .registration__fields a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.registration__container .registration__fields a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=RegistrationForm.css.map */
